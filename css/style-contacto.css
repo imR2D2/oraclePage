@@ -1,111 +1,115 @@
 /*Header.................................*/
 header {
-  background: gainsboro;
+	background: gainsboro;
 }
 
 .container {
-  position: relative;
-  margin: 0 auto;
+	position: relative;
+	margin: 0 auto;
 }
 
-h1{
-  margin-left: 160px;
+h1 {
+	margin-left: 160px;
 }
 
 nav {
-  position: absolute;
-  top: 110px;
-  right: 200px;
+	position: absolute;
+	top: 110px;
+	right: 200px;
 }
 
 nav li {
-  display: inline;
-  margin-right: 15px;
+	display: inline;
+	margin-right: 15px;
 }
 
 nav a {
-  text-decoration: none;
-  font-size: 30px;
-  color: black;
-  text-transform: uppercase;
+	text-decoration: none;
+	font-size: 30px;
+	color: black;
+	text-transform: uppercase;
 }
 
-nav a:hover{
-  color: #c78c19;
-  text-decoration: underline;
+nav a:hover {
+	color: #c78c19;
+	text-decoration: underline;
 }
 
 /*Main...........................................*/
-main{
-  width: 80%;
-  margin: 0 auto;
+
+form {
+	margin: 40px 0;
 }
 
-form{
-  margin: 40px 0;
+form label,
+form legend {
+	display: block;
+	font-size: 30px;
+	margin-bottom: 10px;
 }
 
-form label, form legend{
-  display: block;
-  font-size: 30px;
-  margin-bottom: 10px;
+.patronInput {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 25px;
+	padding: 8px 25px;
+	/*El contenido se adapta el width de 80% del main*/
+	width: 45%;
 }
 
-.patronInput{
-  display: block;
-  font-size: 20px;
-  margin-bottom: 25px;
-  padding: 8px 25px;
-/*El contenido se adapta el width de 80% del main*/
-  width: 45%;
+.checkbox {
+	margin: 25px 0;
 }
 
-.checkbox{
-  margin: 25px 0;
+.enviar {
+	width: 30%;
+	padding: 15px 0;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: orange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+
+	/*  transition: 1s background;*/
+	transition: 1s all;
+	cursor: pointer;
 }
 
-.enviar{
-  width: 30%;
-  padding: 15px 0;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: orange;
-  color: white;
-  border: none;
-  border-radius: 5px;
-
-/*  transition: 1s background;*/
-  transition: 1s all;
-  cursor: pointer;
+.enviar:hover {
+	background-color: orangered;
+	transform: scale(1.2);
+	transform: scale(1.2) rotate(60deg);
 }
 
-.enviar:hover{
-  background-color: orangered;
-  transform: scale(1.2);
-  transform: scale(1.2) rotate(60deg);
+table {
+	margin: 40px;
 }
 
-table{
-  margin: 40px;
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
 }
 
-thead{
-  background: #555555;
-  color: white;
-  font-weight: bold;
-}
-
-td{
-  border-top: 1px solid #000000;
-  padding: 10px;
+td {
+	border-top: 1px solid #000000;
+	padding: 10px;
 }
 /*Footer.....................*/
 
-footer{
-  text-align: center;
-  padding: 40px;
-  color: white;
-  background-image: url("../img/bg.jpg");
+footer {
+	text-align: center;
+	padding: 40px;
+	color: white;
+	background-image: url("../img/bg.jpg");
 }
 
-
+@media screen and (max-width: 480px) {
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+	}
+}

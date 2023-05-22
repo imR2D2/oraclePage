@@ -1,55 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=, initial-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Alura</title>
-</head>
-<body>
-	<div class="container">
-	<header>
-		<h1><img src="./img/logo.png" alt=""></h1>
-		<nav>
-			<ul class="navegacion">
-				<li><a href="./index.html">Home</a></li>
-				<li><a href="./index.html">Products</a></li>
-				<li><a href="./contacto.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<ul class="products">
-			<li>
-				<h2>Cabello</h2>
-				<img src="./img/cabello.jpg" alt="">
-				<p class="products_description">Con tijera o maquina, a gusto</p>
-				<p class="products_price">$10.00 MXN</p>
-			</li>
-			<li>
-				<h2>Barba</h2>
-				<img src="./img/barba.jpg" alt="">
-				<p class="products_description">Corte y diseno profesional de barba</p>
-				<p class="products_price">$20.00 MXN</p>
-			</li>
-			<li>
-				<h2>Cabello + Barba</h2>
-				<img src="./img/cabello+barba.jpg" alt="">
-				<p class="products_description">Paquete completo de cabello y barba</p>
-				<p class="products_price">$30.00 MXN</p>
-			</li>
-		</ul>
-	</main>
 
-	<footer>
-		<img src="./img/logo-blanco.png" alt="">
-		<p>Copyright &copy;</p>
-	</footer>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Barbería Alura</title>
+		<link rel="stylesheet" href="./css/style-contacto.css" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@200;600&display=swap");
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><img src="./img/logo.png" alt="" /></h1>
+			<nav>
+				<ul class="navegacion">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./productos.html">Products</a></li>
+					<li><a href="./contacto.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
+		<img id="banner" src="img/banner.jpg" />
 
-	</div>
+		<main>
+			<section class="principal">
+				<h2 class="tituloPrincipal">Sobre la Barbería Alura</h2>
 
-</body>
+				<img src="./img/utensilios.jpg" class="utensilios" />
+
+				<p>
+					Ubicada en el corazón de la ciudad, la
+					<strong>Barbería Alura</strong> trae para el mercado lo que hay de
+					mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya
+					es destaque en la ciudad y conquista nuevos clientes diariamente.
+				</p>
+				<p id="mision">
+					<em
+						>Nuestra misión es:
+						<strong
+							>"Proporcionar autoestima y calidad de vida a nuestros
+							clientes"</strong
+						>.</em
+					>
+				</p>
+				<p>
+					Ofrecemos profesionales experimentados que están constantemente
+					observando los cambios y movimiento en el mundo de la moda, para así
+					ofrecer a nuestros clientes las últimas tendencias. El atendimiento
+					posee un padrón de excelencia y agilidad, garantizando calidad y
+					satisfacción de nuestros clientes.
+				</p>
+			</section>
+
+			<section class="mapa">
+				<h3 class="tituloPrincipal">Nuestra Ubicacion</h3>
+				<p>Nuestro establecimiento esta ubicado en el corozon de la ciudad</p>
+				<div class="mapaContenido">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1021119.3835428322!2d-73.3004235028675!3d1.3274263668675237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e1bf13f7a09ec09%3A0xd9db3ac6ed7ca227!2sMiraflores%2C%20Guaviare%2C%20Colombia!5e0!3m2!1ses!2smx!4v1684720126151!5m2!1ses!2smx"
+						width="100%"
+						height="350"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</section>
+
+			<section class="diferenciales">
+				<h2 class="tituloPrincipal">Diferenciales</h2>
+
+				<div class="contenidoDiferencial">
+					<ul class="listaDiferencial">
+						<li class="items">Atención personalizada a los clientes</li>
+						<li class="items">Espacio diferenciado</li>
+						<li class="items">Localización</li>
+						<li class="items">Puntualidad</li>
+						<li class="items">Limpieza</li>
+						<li class="items">Profesesionales calificados</li>
+						<!--Lo pegamos porque como le pusimos a la lista un display:inline-block, lo que hace es que si tenemos la imagen con salto de linea lo despega, pero si lo juntamos con la lista en la misma linea de codigo lo une-->
+					</ul><img src="img/diferenciales.jpg" class="imagenDiferencial" />
+				</div>
+				<div class="video">
+					<iframe
+						width="100%"
+						height="315"
+						src="https://www.youtube.com/embed/bOptMhjGhpo"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<img src="./img/logo-blanco.png" alt="" />
+			<p>Copyright &copy;</p>
+		</footer>
+	</body>
 </html>

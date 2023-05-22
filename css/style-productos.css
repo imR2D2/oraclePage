@@ -1,0 +1,98 @@
+/*Header.................................*/
+header {
+  background: gainsboro;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+}
+
+h1{
+  margin-left: 160px;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 200px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+nav a:hover{
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+/*Main...........................................*/
+
+.products{
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+}
+
+.products li{
+  display: inline-block;
+  width: 28%;
+/*  background-color: #CCCCCC;*/
+  margin: 0 1.5%;
+  padding: 30px 20px;
+/*  los datos del padding seran contabilizados dentro del 28% del width para que no de salgo de linea cada recuadro*/
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.products li:hover{
+  border: 5px solid #c78c19;
+}
+
+.products li:active{
+  border: 5px solid #088c19;
+}
+.products h2{
+  font-size: 30px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.products_description{
+  font-size: 22px;
+}
+
+.products_price{
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/*
+.products img{
+  display: block;
+  margin: 0 auto;
+}
+*/
+
+/*Footer.....................*/
+
+footer{
+  text-align: center;
+  padding: 40px;
+  color: white;
+  background-image: url("../img/bg.jpg");
+}
+
+
+
