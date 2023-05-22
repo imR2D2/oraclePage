@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style-contacto.css">
+	<title>Alura</title>
+</head>
+<body>
+	<div class="container">
+	<header>
+		<h1><img src="./img/logo.png" alt=""></h1>
+		<nav>
+			<ul class="navegacion">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./index.html">Products</a></li>
+				<li><a href="./contacto.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<form action="">
+			<label for="nombreApellido">Nombre y Apellido</label>
+			<input type="text" id="nombreApellido" class="patronInput" required>
+
+			<label for="correoElectronico">Correo Electronico</label>
+			<input type="email" id="correoElectronico" class="patronInput" required placeholder="name@dominio.com">
+
+			<label for="telefono">Telefono</label>
+			<input type="tel" id="telefono" class="patronInput" required placeholder="(XX) XXX XXX XX XX">
+
+			<label for="textArea">Mensaje</label>
+			<textarea id="textArea" cols="60" rows="10" class="patronInput required"></textarea>
+
+
+			<fieldset>
+				<legend>Como le gustaria que lo contactemos?</legend>
+				<label for="radioEmail"><input type="radio" name="contacto" id="radioEmail" value="email" checked>Email</label>
+				
+				<label for="radioTelefono"><input type="radio" name="contacto" id="radioTelefono" value="email">Telefono</label>
+				<label for="radioWa"><input type="radio" name="contacto" id="radioWa" value="email">WhatsApp</label>
+			</fieldset>
+			
+			<fieldset>
+				<legend>En cual horario prefiere ser atendido?</legend>
+				<select name="" id="">
+					<option value="">Manana</option>
+					<option value="">Tarde</option>
+					<option value="">Noche</option>
+				</select>
+			</fieldset>
+
+			<label><input type="checkbox" class="checkbox" checked>Le gustaria recibir notificaciones de la barberia?</label>
+			
+			<input type="submit" class="enviar" value="Enviar Datos">
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>DIA</th>
+					<th>HORARIO</th>
+				</tr>
+
+			</thead>
+			<tbody>
+				<tr>
+					<td>Lunes</td>
+					<td>12:00 P.M</td>
+				</tr>
+				<tr>
+					<td>Miercoles</td>
+					<td>2:00 P.M</td>
+				</tr>
+				<tr>
+					<td>Viernes</td>
+					<td>4:00 P.M</td>
+				</tr>
+			</tbody>
+				</table>
+	</main>
+
+	<footer>
+		<img src="./img/logo-blanco.png" alt="">
+		<p>Copyright &copy;</p>
+	</footer>
+	</div>
+
+</body>
+</html>
